@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="css/chat.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link href="css/chat.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center">Chatbot Application</h1>
+    <div class="details">
+        <p>To start the Chatbot application , First fill all the required details.</p>
+    <button type="button" class="btn btn1 btn-default btn-lg text-center" data-toggle="modal" data-target="#myModal">
+        Fill Required Details
+      </button>
+    </div>  
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Required Details For Chatbot</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Enter Room name</p>
+                    <form action="chat.html">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Room-Name" name="room" id="room" required>
+                        </div>
+                        <div class="form-group">
+                            <p>Enter User name</p>
+                            <input type="text" class="form-control" placeholder="User-Name" name="username"
+							id="username" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" >Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
